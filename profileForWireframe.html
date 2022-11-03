@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Profile</title>
+</head>
+<style>
+  /* RESET all css borders */
+  * {
+    /* see article on CSS reset  http://sixrevisions.com/css/css-tips/css-tip-1-resetting-your-styles-with-css-reset/  */
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #F0F0F5;
+  }
+
+  /*------ headder row    ---------*/
+
+  header {
+    clear: both;
+    color: lightblue;
+    background-color: black;
+  }
+
+  header nav a {
+    color: red;
+  }
+
+  /*------ title row    ---------*/
+
+  .pageTitle {
+    display: block;
+    clear: both;
+    color: lightblue;
+    background-color: midnightblue;
+  }
+
+  .pageTitle h1 {
+    text-align: center;
+  }
+
+  /*------ content band   ---------*/
+  .centerContentRow {
+    padding:10px;
+    width:100%;
+    height: 100%;
+  }
+
+  /*------ content    ---------*/
+
+  .content {
+    display: block;
+    padding: 10px;
+    float: left;
+    width: 74%;
+    border:1px solid black;
+    margin-right:10px;
+  }
+
+  .profile-pic{
+    width:100px;
+  }
+
+
+  .comments {
+    border: 1px solid;
+  }
+
+  .comments article {
+    padding: 10px;
+  }
+
+  .comments footer {
+    padding: 10px 0 0 10px;
+  }
+
+  /*------ site links row    ---------*/
+
+  .links {
+    padding: 5px;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .links a {
+    margin: 0 -2px 0 -2px;
+    padding: 0 5px;
+    border: 1px solid;
+  }
+
+  /*------ adds    ---------*/
+
+  .ads {
+    float: right;
+    display: block;
+    width: 25%;
+    border:1px solid black;
+  }
+
+
+  /*------ footer row    ---------*/
+
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    clear: both;
+  }
+
+
+  /*------ @media reorganisation    ---------*/
+  /* This uses max width! so the page is designed for big screen and
+re-arranges for moblie */
+  @media screen and (max-width: 600px) {
+    .ads {
+      width: 100%;
+    }
+
+    .content {
+      width: 100%;
+    }
+  }
+</style>
+
+<body>
+
+  <header>
+    <nav class="externalLinks">
+      <p>
+        Profile: <a href="https://www.linkedin.com/in/snigdha-banani05/">LinkedIn</a>
+      </p>
+    </nav>
+  </header>
+
+  <section class="pageTitle">
+    <h1> Snigdha Banani </h1>
+  </section>
+
+  <nav class="linksContainer">
+    <div class="links">
+      <h3>University Links</h3>
+      <a href="http://www.cs.cf.ac.uk">COMSC</a>
+      <a href="http://www.cs.cf.ac.uk">COMSC</a>
+      <a href="http://www.cs.cf.ac.uk">COMSC</a>
+    </div>
+  </nav>
+
+  <div class="centerContentRow">
+    <article class="content">
+      <section class="mainItem">
+        <p>A firm believer of innovational technologies. Look forward to grow by conveying genuine work ethics along
+          with exploring out of box solutions to meet all the business needs. </p>
+      </section>
+
+      <section class="comments">
+        <h3>Personal Information:</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td>Snigdha Banani</td>
+            </tr>
+            <tr>
+              <td>Course</td>
+              <td>MSc in Software Engineering</td>
+            </tr>
+            <tr>
+              <td>University</td>
+              <td>Cardiff University</td>
+            </tr>
+
+            <tr>
+              <td>Interests</td>
+              <td>Binge watching anime and tv series</td>
+            </tr>
+            <tr>
+              <td>Email contact</td>
+              <td>bananis@cardiff.ac.uk</td>
+            </tr>
+            <tr>
+              <td>LinkedIn contact</td>
+              <td><a href="https://www.linkedin.com/in/snigdha-banani05/">Linkedin profile</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </article>
+
+    <aside class="ads">
+      <div>
+        <img class="profile-pic" src="profile.jpg" alt="Profile pic" title="profile image">
+      </div>
+      <table>
+        <tr>
+          <td>Contact Me</td>
+          <td>
+            <form action="qeryForm" method="post">
+              <label>
+                Email Id
+              </label>
+              <input type='email' name="emailId" id="emailId" placeholder="Enter the email id: ">
+              </input><br /><br />
+              <label>Query</label>
+              <textArea rows="5" cols="20"></textArea><br /><br />
+              <input type='submit' value="submit"> </input>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <p> The GamesCompany..... a <a href="parentCompany.htm">parent</a> subsiduary. </p>
+    <address>
+      <p>The GamesHouse.website... <br> Corporate address: 20 ARoad, AStreet, ATown. CF0 3TF</p>
+    </address>
+  </footer>
+
+</body>
+
+</html>

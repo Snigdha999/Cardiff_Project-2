@@ -1,0 +1,107 @@
+
+/* RESET all css borders */
+*{  /* see article on CSS reset  http://sixrevisions.com/css/css-tips/css-tip-1-resetting-your-styles-with-css-reset/  */
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+  background-color: #F0F0F5;
+}
+
+/*------ headder row    ---------*/
+
+header{
+  clear:both;
+  color:lightblue;
+  background-color:black;
+}
+header nav a{
+    color:red;
+}
+
+/*------ title row    ---------*/
+
+.pageTitle{
+  display:block;
+  clear:both;
+  color:lightblue;
+  background-color:midnightblue;
+}
+.pageTitle h1{
+  text-align: center;
+}
+
+/*------ content band   ---------*/
+.centerContentRow{
+}
+
+/*------ content    ---------*/
+
+.content{
+  display: block;
+  padding: 10px;
+  float:left;
+  width: 75%
+}
+
+
+.comments{
+  border:1px solid;
+}
+
+.comments article{
+  padding: 10px;
+}
+.comments footer{
+  padding: 10px 0 0 10px;
+}
+
+/*------ site links row    ---------*/
+
+.links{
+  padding: 5px;
+  text-align: center;
+  clear:both;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+}
+.links a{
+  margin: 0 -2px 0 -2px;
+  padding: 0 5px;
+  border: 1px solid;
+}
+
+/*------ adds    ---------*/
+
+.ads{
+  float: right;
+  display: block;
+  width: 25%;
+  background-color: #FaFaFa;
+}
+
+
+/*------ footer row    ---------*/
+
+.footer{
+  background-color:black;
+  color:white;
+  text-align: center;
+  clear: both;
+}
+
+
+/*------ @media reorganisation    ---------*/
+/* This uses max width! so the page is designed for big screen and
+re-arranges for moblie */
+@media screen and (max-width: 600px){
+  .ads{
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+  }
+}
